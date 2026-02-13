@@ -1,32 +1,36 @@
 openapi: 3.0.4
 info:
   title: Airline Lookup
-  description: Airline Lookup is a simple tool for getting information on airlines. It returns information on various airlines.
+  description: >-
+    Airline Lookup is a simple tool for getting information on airlines. It
+    returns information on various airlines.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
     email: hello@apiverve.com
     url: https://apiverve.com/contact
-  version: 1.0.9
+  version: 1.0.0
 externalDocs:
   description: Learn more about APIVerve
   url: https://docs.apiverve.com?utm_source=openapi
 servers:
-- url: https://api.apiverve.com/
+  - url: https://api.apiverve.com/
 paths:
   /v1/airlinelookup:
     get:
       summary: Get Airline Info from IATA
-      description: Airline Lookup is a simple tool for getting information on airlines. It returns information on various airlines.
+      description: Get the airline information for a specific airline IATA code
       operationId: airlinelookup
       parameters:
-      - name: iata
-        in: query
-        schema:
-          type: string
-        required: false
-        description: The IATA code of the airline for which you want to get the information (e.g., AA)
-        example: AA
+        - name: iata
+          in: query
+          schema:
+            type: string
+          required: true
+          description: >-
+            The IATA code of the airline for which you want to get the
+            information (e.g., AA)
+          example: AA
       responses:
         '200':
           description: Successful Response
@@ -42,24 +46,28 @@ paths:
                     type: string
                     description: error
                   data:
-                    type: string
+                    type: object
                     description: data
               example:
                 status: ok
-                error: 
+                error: null
                 data:
-                - Name: American Airlines
-                  Alias: ''
-                  IATA: AA
-                  ICAO: AAL
-                  Callsign: AMERICAN
-                  Country: United States
+                  - name: American Airlines
+                    alias: null
+                    iata: AA
+                    icao: AAL
+                    callsign: AMERICAN
+                    country: United States
+                    id: AA
+                    islowcost: false
+                    logourl: >-
+                      https://storage.googleapis.com/apiverve/APIResources/arlinelookup/logos/AA.png?X-Goog-Algorithm=...
         '401':
           description: Your request was not authorized, or your API Key was invalid
         '404':
           description: Requested resource was not found
         '500':
-          description: A server error has occured, try again later
+          description: A server error has occurred, try again later
 components:
   securitySchemes:
     api_key:
@@ -67,4 +75,4 @@ components:
       name: x-api-key
       in: header
 security:
-- api_key: []
+  - api_key: []
