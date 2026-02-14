@@ -12,7 +12,6 @@ namespace APIVerve.API.AirlineLookup
     {
         /// <summary>
         /// The IATA code of the airline for which you want to get the information (e.g., AA)
-        /// Example: AA
         /// </summary>
         [JsonProperty("iata")]
         public string Iata { get; set; }
