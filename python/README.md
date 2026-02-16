@@ -223,8 +223,9 @@ from apiverve_airlinelookup.apiClient import AirlinelookupAPIClient
 
 api = AirlinelookupAPIClient("[YOUR_API_KEY]")
 
+query = { "iata": "AA" }
+
 try:
-    query = { "iata": "AA" }
     result = api.execute(query)
     print(result)
 finally:
