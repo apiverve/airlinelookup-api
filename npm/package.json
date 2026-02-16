@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/airlinelookup",
-  "version": "1.1.13",
+  "version": "1.1.14",
   "description": "Airline Lookup is a simple tool for getting information on airlines. It returns information on various airlines.",
   "main": "index.js",
   "types": "index.d.ts",
