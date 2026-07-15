@@ -7,7 +7,7 @@ Airline Lookup is a simple tool for getting information on airlines. It returns 
 ![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 [![npm version](https://img.shields.io/npm/v/@apiverve/airlinelookup.svg)](https://www.npmjs.com/package/@apiverve/airlinelookup)
 
-This is a Javascript Wrapper for the [Airline Lookup API](https://apiverve.com/marketplace/airlinelookup?utm_source=npm&utm_medium=readme)
+This is a Javascript Wrapper for the [Airline Lookup API](https://airlinelookup.apiverve.com?utm_source=npm&utm_medium=readme)
 
 ---
 
@@ -123,12 +123,15 @@ async function makeRequest() {
   "error": null,
   "data": [
     {
-      "Name": "American Airlines",
-      "Alias": "",
-      "IATA": "AA",
-      "ICAO": "AAL",
-      "Callsign": "AMERICAN",
-      "Country": "United States"
+      "name": "American Airlines",
+      "alias": null,
+      "iata": "AA",
+      "icao": "AAL",
+      "callsign": "AMERICAN",
+      "country": "United States",
+      "id": "AA",
+      "islowcost": false,
+      "logourl": "https://storage.googleapis.com/apiverve/APIResources/arlinelookup/logos/AA.png?X-Goog-Algorithm=..."
     }
   ]
 }
