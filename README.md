@@ -1,13 +1,13 @@
-# [Airline Lookup API](https://apiverve.com/marketplace/airlinelookup?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [Airline Lookup API](https://airlinelookup.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
 
 Airline Lookup is a simple tool for getting information on airlines. It returns information on various airlines.
 
 The Airline Lookup API provides a simple, reliable way to integrate airline lookup functionality into your applications. Built for developers who need production-ready airline lookup capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://apiverve.com/marketplace/airlinelookup?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://airlinelookup.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/airlinelookup?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://airlinelookup.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-GET-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -30,7 +30,11 @@ The Airline Lookup API provides a simple, reliable way to integrate airline look
 ```javascript
 async function callAirlineLookupAPI() {
     try {
-        const response = await fetch('https://api.apiverve.com/v1/airlinelookup', {
+        const params = new URLSearchParams({
+            iata: 'AA'
+        });
+
+        const response = await fetch(`https://api.apiverve.com/v1/airlinelookup?${params}`, {
             method: 'GET',
             headers: {
                 'x-api-key': 'YOUR_API_KEY_HERE'
@@ -50,7 +54,7 @@ callAirlineLookupAPI();
 ### Using cURL
 
 ```bash
-curl -X GET "https://api.apiverve.com/v1/airlinelookup?param=value" \
+curl -X GET "https://api.apiverve.com/v1/airlinelookup?iata=AA" \
   -H "x-api-key: YOUR_API_KEY_HERE"
 ```
 
@@ -150,14 +154,14 @@ go get github.com/apiverve/airlinelookup-api/go
 |---------|---------|
 | **Multi-language SDKs** | Native packages for JavaScript, Python, C#, Go, and Android |
 | **Simple Integration** | Single API key authentication, consistent response format |
-| **Production Ready** | 99.9% uptime, fast response times, used by thousands of developers |
+| **Production Ready** | 99.9% uptime SLA, served from 24 global regions |
 | **Comprehensive Docs** | Full examples, OpenAPI spec, and dedicated support |
 
 ---
 
 ## Documentation
 
-- 🏠 **API Home:** [Airline Lookup API](https://apiverve.com/marketplace/airlinelookup?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [Airline Lookup API](https://airlinelookup.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/airlinelookup](https://docs.apiverve.com/ref/airlinelookup)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -169,7 +173,7 @@ go get github.com/apiverve/airlinelookup-api/go
 The Airline Lookup API is commonly used for:
 
 - **Web Applications** - Add airline lookup features to your frontend or backend
-- **Mobile Apps** - Native SDKs for iOS and Android development
+- **Mobile Apps** - Native SDKs for Android development
 - **Automation** - Integrate with n8n, Zapier, or custom workflows
 - **SaaS Products** - Enhance your product with airline lookup capabilities
 - **Data Pipelines** - Process and analyze data at scale
@@ -199,7 +203,7 @@ All responses are JSON with this structure:
 
 ## Support & Community
 
-- 🏠 **API Home**: [Airline Lookup API](https://apiverve.com/marketplace/airlinelookup?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [Airline Lookup API](https://airlinelookup.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)
