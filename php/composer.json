@@ -1,0 +1,49 @@
+{
+    "name": "apiverve/airlinelookup",
+    "description": "Airline Lookup is a simple tool for getting information on airlines. It returns information on various airlines.",
+    "version": "1.2.0",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "APIVerve",
+            "email": "hello@apiverve.com",
+            "homepage": "https://apiverve.com"
+        }
+    ],
+    "keywords": [
+        "api",
+        "apiverve",
+        "airlinelookup",
+        "airline lookup",
+        "airline lookup api",
+        "airline lookup tool",
+        "airline lookup software",
+        "airline lookup service"
+    ],
+    "homepage": "https://airlinelookup.apiverve.com?utm_source=php&utm_medium=homepage",
+    "support": {
+        "email": "hello@apiverve.com",
+        "docs": "https://docs.apiverve.com/ref/airlinelookup",
+        "source": "https://github.com/apiverve/airlinelookup-API/tree/main/php"
+    },
+    "require": {
+        "php": ">=7.4",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "APIVerve\\Airlinelookup\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "APIVerve\\Airlinelookup\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
