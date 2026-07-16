@@ -25,26 +25,50 @@ namespace APIVerve.API.AirlineLookup
 
         [JsonProperty("data")]
         public Datum[] Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Datum
     {
-        [JsonProperty("Name")]
+        [JsonProperty("name")]
         public string Name { get; set; }
 
-        [JsonProperty("Alias")]
-        public string Alias { get; set; }
+        [JsonProperty("alias")]
+        public object Alias { get; set; }
 
-        [JsonProperty("IATA")]
+        [JsonProperty("iata")]
         public string Iata { get; set; }
 
-        [JsonProperty("ICAO")]
+        [JsonProperty("icao")]
         public string Icao { get; set; }
 
-        [JsonProperty("Callsign")]
+        [JsonProperty("callsign")]
         public string Callsign { get; set; }
 
-        [JsonProperty("Country")]
+        [JsonProperty("country")]
         public string Country { get; set; }
+
+        [JsonProperty("id")]
+        public string Id { get; set; }
+
+        [JsonProperty("islowcost")]
+        public bool? Islowcost { get; set; }
+
+        [JsonProperty("logourl")]
+        public Uri Logourl { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
