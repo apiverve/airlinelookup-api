@@ -2,8 +2,10 @@ openapi: 3.0.4
 info:
   title: Airline Lookup
   description: >-
-    Airline Lookup is a simple tool for getting information on airlines. It
-    returns information on various airlines.
+    Airline Lookup is an airline codes API that matches IATA codes and airline
+    names to carrier profiles, returning the official title, callsign,
+    registration country, and low-cost status. Paid tiers add three-letter ICAO
+    code lookups and carrier logo URLs.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -18,7 +20,7 @@ servers:
 paths:
   /v1/airlinelookup:
     get:
-      summary: Get Airline Info from IATA
+      summary: Airline Lookup
       description: Get the airline information for a specific airline IATA code
       operationId: airlinelookup
       parameters:
@@ -60,8 +62,7 @@ paths:
                     country: United States
                     id: AA
                     islowcost: false
-                    logourl: >-
-                      https://storage.googleapis.com/apiverve/APIResources/arlinelookup/logos/AA.png?X-Goog-Algorithm=...
+                    logourl: https://storage.googleapis.com/apiverve/APIResources/arlinelookup/logos/AA.png?X-Goog-Algorithm=...
         '401':
           description: Your request was not authorized, or your API Key was invalid
         '404':

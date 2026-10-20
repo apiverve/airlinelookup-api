@@ -1,13 +1,13 @@
-# [Airline Lookup API](https://airlinelookup.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [Airline Lookup API](https://apiverve.com/marketplace/airlinelookup?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-Airline Lookup is a simple tool for getting information on airlines. It returns information on various airlines.
+Airline Lookup is an airline codes API that matches IATA codes and airline names to carrier profiles, returning the official title, callsign, registration country, and low-cost status. Paid tiers add three-letter ICAO code lookups and carrier logo URLs.
 
 The Airline Lookup API provides a simple, reliable way to integrate airline lookup functionality into your applications. Built for developers who need production-ready airline lookup capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://airlinelookup.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/airlinelookup?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://airlinelookup.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/airlinelookup?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-GET-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -161,7 +161,7 @@ go get github.com/apiverve/airlinelookup-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [Airline Lookup API](https://airlinelookup.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [Airline Lookup API](https://apiverve.com/marketplace/airlinelookup?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/airlinelookup](https://docs.apiverve.com/ref/airlinelookup)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -230,7 +230,7 @@ A real response from the Airline Lookup API:
 
 ## Support & Community
 
-- 🏠 **API Home**: [Airline Lookup API](https://airlinelookup.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [Airline Lookup API](https://apiverve.com/marketplace/airlinelookup?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)
