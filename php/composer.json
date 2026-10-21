@@ -1,7 +1,7 @@
 {
     "name": "apiverve/airlinelookup",
-    "description": "Airline Lookup is a simple tool for getting information on airlines. It returns information on various airlines.",
-    "version": "1.2.0",
+    "description": "Airline Lookup is an airline codes API that matches IATA codes and airline names to carrier profiles, returning the official title, callsign, registration country, and low-cost status. Paid tiers add three-letter ICAO code lookups and carrier logo URLs.",
+    "version": "1.2.2",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -15,13 +15,13 @@
         "api",
         "apiverve",
         "airlinelookup",
-        "airline lookup",
-        "airline lookup api",
-        "airline lookup tool",
-        "airline lookup software",
-        "airline lookup service"
+        "airline codes api",
+        "airline code finder",
+        "airline iata codes api",
+        "iata code lookup",
+        "airline lookup api"
     ],
-    "homepage": "https://airlinelookup.apiverve.com?utm_source=php&utm_medium=homepage",
+    "homepage": "https://apiverve.com/marketplace/airlinelookup?utm_source=php&utm_medium=referral&utm_content=homepage",
     "support": {
         "email": "hello@apiverve.com",
         "docs": "https://docs.apiverve.com/ref/airlinelookup",

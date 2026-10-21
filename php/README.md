@@ -1,6 +1,6 @@
 # Airline Lookup API - PHP Package
 
-Airline Lookup is a simple tool for getting information on airlines. It returns information on various airlines.
+Airline Lookup is an airline codes API that matches IATA codes and airline names to carrier profiles, returning the official title, callsign, registration country, and low-cost status. Paid tiers add three-letter ICAO code lookups and carrier logo URLs.
 
 ## Installation
 
@@ -91,11 +91,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/airlinelookup?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/airlinelookup?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://airlinelookup.apiverve.com?utm_source=php&utm_medium=readme](https://airlinelookup.apiverve.com?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/airlinelookup?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/airlinelookup?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License
