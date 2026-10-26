@@ -1,11 +1,11 @@
 # Airline Lookup API - Dart/Flutter Client
 
-Airline Lookup is a simple tool for getting information on airlines. It returns information on various airlines.
+Airline Lookup is an airline codes API that matches IATA codes and airline names to carrier profiles, returning the official title, callsign, registration country, and low-cost status. Paid tiers add three-letter ICAO code lookups and carrier logo URLs.
 
 [![pub package](https://img.shields.io/pub/v/apiverve_airlinelookup.svg)](https://pub.dev/packages/apiverve_airlinelookup)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This is the Dart/Flutter client for the [Airline Lookup API](https://apiverve.com/marketplace/airlinelookup?utm_source=dart&utm_medium=readme).
+This is the Dart/Flutter client for the [Airline Lookup API](https://apiverve.com/marketplace/airlinelookup?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## Installation
 
@@ -13,7 +13,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  apiverve_airlinelookup: ^1.1.14
+  apiverve_airlinelookup: ^1.2.3
 ```
 
 Then run:
@@ -53,12 +53,15 @@ void main() async {
   "error": null,
   "data": [
     {
-      "Name": "American Airlines",
-      "Alias": "",
-      "IATA": "AA",
-      "ICAO": "AAL",
-      "Callsign": "AMERICAN",
-      "Country": "United States"
+      "name": "American Airlines",
+      "alias": null,
+      "iata": "AA",
+      "icao": "AAL",
+      "callsign": "AMERICAN",
+      "country": "United States",
+      "id": "AA",
+      "islowcost": false,
+      "logourl": "https://storage.googleapis.com/apiverve/APIResources/arlinelookup/logos/AA.png?X-Goog-Algorithm=..."
     }
   ]
 }
@@ -66,12 +69,12 @@ void main() async {
 
 ## API Reference
 
-- **API Home:** [Airline Lookup API](https://apiverve.com/marketplace/airlinelookup?utm_source=dart&utm_medium=readme)
-- **Documentation:** [docs.apiverve.com/ref/airlinelookup](https://docs.apiverve.com/ref/airlinelookup?utm_source=dart&utm_medium=readme)
+- **API Home:** [Airline Lookup API](https://apiverve.com/marketplace/airlinelookup?utm_source=dart&utm_medium=referral&utm_content=readme)
+- **Documentation:** [docs.apiverve.com/ref/airlinelookup](https://docs.apiverve.com/ref/airlinelookup?utm_source=dart&utm_medium=referral&utm_content=readme)
 
 ## Authentication
 
-All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=readme).
+All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## License
 
@@ -79,4 +82,4 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=readme)
+Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme)
