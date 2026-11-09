@@ -1,7 +1,7 @@
 Airline Lookup API
 ============
 
-Airline Lookup is an airline codes API that matches IATA codes and airline names to carrier profiles, returning the official title, callsign, registration country, and low-cost status. Paid tiers add three-letter ICAO code lookups and carrier logo URLs.
+Airline Lookup is an airline codes API that matches IATA codes and airline names to carrier profiles, returning the official title, callsign, registration country, whether the carrier is still operating, and low-cost status. Paid tiers add the country's ISO code, three-letter ICAO code lookups and carrier logo URLs.
 
 
 [![NuGet version](https://img.shields.io/nuget/v/APIVerve.API.AirlineLookup.svg)](https://www.nuget.org/packages/APIVerve.API.AirlineLookup)
@@ -374,6 +374,8 @@ using (var apiClient = new AirlineLookupAPIClient("[YOUR_API_KEY]"))
       "callsign": "AMERICAN",
       "country": "United States",
       "id": "AA",
+      "isactive": true,
+      "countrycode": "US",
       "islowcost": false,
       "logourl": "https://storage.googleapis.com/apiverve/APIResources/arlinelookup/logos/AA.png?X-Goog-Algorithm=..."
     }

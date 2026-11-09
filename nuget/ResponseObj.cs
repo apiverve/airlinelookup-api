@@ -53,6 +53,12 @@ namespace APIVerve.API.AirlineLookup
         [JsonProperty("id")]
         public string Id { get; set; }
 
+        [JsonProperty("isactive")]
+        public bool? Isactive { get; set; }
+
+        [JsonProperty("countrycode")]
+        public string Countrycode { get; set; }
+
         [JsonProperty("islowcost")]
         public bool? Islowcost { get; set; }
 
