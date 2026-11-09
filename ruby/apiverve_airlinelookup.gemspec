@@ -2,12 +2,12 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "apiverve_airlinelookup"
-  spec.version       = "1.2.4"
+  spec.version       = "1.2.5"
   spec.authors       = ["APIVerve"]
   spec.email         = ["hello@apiverve.com"]
 
   spec.summary       = "Airline Lookup API - Ruby Client"
-  spec.description   = "Airline Lookup is an airline codes API that matches IATA codes and airline names to carrier profiles, returning the official title, callsign, registration country, and low-cost status. Paid tiers add three-letter ICAO code lookups and carrier logo URLs."
+  spec.description   = "Airline Lookup is an airline codes API that matches IATA codes and airline names to carrier profiles, returning the official title, callsign, registration country, whether the carrier is still operating, and low-cost status. Paid tiers add the country's ISO code, three-letter ICAO code lookups and carrier logo URLs."
   spec.homepage      = "https://apiverve.com/marketplace/airlinelookup?utm_source=ruby&utm_medium=referral&utm_content=homepage"
   spec.license       = "MIT"
   spec.required_ruby_version = ">= 2.7.0"
