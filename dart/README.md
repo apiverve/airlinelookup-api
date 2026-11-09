@@ -1,6 +1,6 @@
 # Airline Lookup API - Dart/Flutter Client
 
-Airline Lookup is an airline codes API that matches IATA codes and airline names to carrier profiles, returning the official title, callsign, registration country, and low-cost status. Paid tiers add three-letter ICAO code lookups and carrier logo URLs.
+Airline Lookup is an airline codes API that matches IATA codes and airline names to carrier profiles, returning the official title, callsign, registration country, whether the carrier is still operating, and low-cost status. Paid tiers add the country's ISO code, three-letter ICAO code lookups and carrier logo URLs.
 
 [![pub package](https://img.shields.io/pub/v/apiverve_airlinelookup.svg)](https://pub.dev/packages/apiverve_airlinelookup)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -13,7 +13,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  apiverve_airlinelookup: ^1.2.4
+  apiverve_airlinelookup: ^1.2.5
 ```
 
 Then run:
@@ -60,6 +60,8 @@ void main() async {
       "callsign": "AMERICAN",
       "country": "United States",
       "id": "AA",
+      "isactive": true,
+      "countrycode": "US",
       "islowcost": false,
       "logourl": "https://storage.googleapis.com/apiverve/APIResources/arlinelookup/logos/AA.png?X-Goog-Algorithm=..."
     }

@@ -75,6 +75,8 @@ class AirlinelookupData0 {
   String? callsign;
   String? country;
   String? id;
+  bool? isactive;
+  String? countrycode;
   bool? islowcost;
   String? logourl;
 
@@ -86,6 +88,8 @@ class AirlinelookupData0 {
     this.callsign,
     this.country,
     this.id,
+    this.isactive,
+    this.countrycode,
     this.islowcost,
     this.logourl,
   });
@@ -98,6 +102,8 @@ class AirlinelookupData0 {
       callsign: json['callsign'],
       country: json['country'],
       id: json['id'],
+      isactive: json['isactive'],
+      countrycode: json['countrycode'],
       islowcost: json['islowcost'],
       logourl: json['logourl'],
     );
