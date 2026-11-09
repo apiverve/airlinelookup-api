@@ -25,15 +25,17 @@ declare module '@apiverve/airlinelookup' {
 
 
   interface AirlineLookupData {
-      name:      null | string;
-      alias:     null;
-      iata:      null | string;
-      icao:      null | string;
-      callsign:  null | string;
-      country:   null | string;
-      id:        null | string;
-      islowcost: boolean | null;
-      logourl:   null | string;
+      name:        null | string;
+      alias:       null;
+      iata:        null | string;
+      icao:        null | string;
+      callsign:    null | string;
+      country:     null | string;
+      id:          null | string;
+      isactive:    boolean | null;
+      countrycode: null | string;
+      islowcost:   boolean | null;
+      logourl:     null | string;
   }
 
   export default class airlinelookupWrapper {
