@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/airlinelookup",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "Airline Lookup is an airline codes API that matches IATA codes and airline names to carrier profiles, returning the official title, callsign, registration country, whether the carrier is still operating, and low-cost status. Paid tiers add the country's ISO code, three-letter ICAO code lookups and carrier logo URLs.",
   "main": "index.js",
   "types": "index.d.ts",
